@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="100%" stop-color="#0D1122" />
+    </linearGradient>
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" /><stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="nodeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    </linearGradient>
+
+    <filter id="glowDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#7C3AED" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .title { font-size: 15px; font-weight: 800; fill: #F8FAFC; letter-spacing: 0.8px; }
+    .node-header { font-size: 13px; font-weight: 700; }
+    .desc { font-size: 11px; fill: #94A3B8; }
+  </style>
+
+  <rect width="1200" height="380" rx="16" fill="url(#aiCanvas)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- HEADER -->
+  <g transform="translate(30, 25)">
+    <rect width="1140" height="38" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+    <path d="M 10 0 L 1130 0" stroke="url(#purpleGlow)" stroke-width="2.5" />
+    <text x="20" y="24" class="sans title">AUTONOMOUS AGENTIC AI &amp; MODEL CONTEXT PROTOCOL (MCP) DEVSECOPS CONTROL PLANE</text>
+    <text x="1120" y="24" class="mono" font-size="10.5" fill="#C084FC" text-anchor="end">MCP SPECIFICATION 2025/2026 READY</text>
+  </g>
+
+  <!-- COLUMN 1: TELEMETRY & INPUT TRIGGERS -->
+  <g transform="translate(30, 80)">
+    <rect width="250" height="265" rx="10" fill="url(#nodeBg)" stroke="#334155" stroke-width="1.2" />
+    <rect width="250" height="32" rx="10" fill="#1E293B" />
+    <text x="15" y="21" class="sans node-header" fill="#38BDF8">1. INFRA &amp; GITOPS SIGNALS</text>
+
+    <g transform="translate(15, 45)">
+      <rect width="220" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="12" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Terraform / IaC Pull Requests</text>
+      <text x="12" y="40" class="mono desc">Speculative plan &amp; drift payloads</text>
+    </g>
+
+    <g transform="translate(15, 115)">
+      <rect width="220" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="12" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Kubernetes Event Stream</text>
+      <text x="12" y="40" class="mono desc">CrashLoopBackOff, OOMKilled, Pod</text>
+    </g>
+
+    <g transform="translate(15, 185)">
+      <rect width="220" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="12" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Live Cloud Telemetry</text>
+      <text x="12" y="40" class="mono desc">Azure Monitor AMA &amp; Datadog logs</text>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 1 -->
+  <g transform="translate(290, 195)">
+    <line x1="0" y1="15" x2="35" y2="15" stroke="#A855F7" stroke-width="2.5" stroke-dasharray="4,3">
+      <animate attributeName="stroke-dashoffset" values="14;0" dur="1.2s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- COLUMN 2: THE MCP SERVER & REASONING AGENT CORE -->
+  <g transform="translate(335, 80)">
+    <rect width="320" height="265" rx="10" fill="url(#nodeBg)" stroke="#8B5CF6" stroke-width="1.8" filter="url(#glowDrop)" />
+    <rect width="320" height="32" rx="10" fill="#4C1D95" />
+    <text x="15" y="21" class="sans node-header" fill="#FFFFFF">2. MCP PROTOCOL &amp; AGENT SWARM</text>
+
+    <!-- MCP Server Box -->
+    <g transform="translate(15, 45)">
+      <rect width="290" height="65" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1" />
+      <text x="12" y="22" class="sans" font-size="11.5" font-weight="800" fill="#C084FC">Custom MCP Host &amp; Tools</text>
+      <text x="12" y="40" class="mono desc">• Tool Discovery (read_k8s, tf_plan, query_log)</text>
+      <text x="12" y="54" class="mono desc">• Least-Privilege Secure Execution Boundary</text>
+    </g>
+
+    <!-- Swarm Orchestration -->
+    <g transform="translate(15, 122)">
+      <rect width="290" height="65" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" />
+      <text x="12" y="22" class="sans" font-size="11.5" font-weight="800" fill="#38BDF8">LangGraph &amp; CrewAI Swarm</text>
+      <text x="12" y="40" class="mono desc">• Agent 1: SRE Root Cause Diagnostician</text>
+      <text x="12" y="54" class="mono desc">• Agent 2: Policy &amp; Security Compliance Bot</text>
+    </g>
+
+    <!-- Guardrails -->
+    <g transform="translate(15, 198)">
+      <rect width="290" height="50" rx="6" fill="#0F172A" stroke="#34D399" stroke-width="1" />
+      <text x="12" y="20" class="sans" font-size="11" font-weight="700" fill="#34D399">NeMo Guardrails &amp; Token FinOps</text>
+      <text x="12" y="36" class="mono desc">Strict PII filtering &amp; token rate limiting</text>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 2 -->
+  <g transform="translate(665, 195)">
+    <line x1="0" y1="15" x2="35" y2="15" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="4,3">
+      <animate attributeName="stroke-dashoffset" values="14;0" dur="1.2s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- COLUMN 3: ENTERPRISE HYBRID RAG -->
+  <g transform="translate(710, 80)">
+    <rect width="220" height="265" rx="10" fill="url(#nodeBg)" stroke="#334155" stroke-width="1.2" />
+    <rect width="220" height="32" rx="10" fill="#1E293B" />
+    <text x="15" y="21" class="sans node-header" fill="#34D399">3. HYBRID RAG ENGINE</text>
+
+    <g transform="translate(12, 45)">
+      <rect width="196" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="10" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Vector Database</text>
+      <text x="10" y="40" class="mono desc">Qdrant &amp; pgvector with HNSW</text>
+    </g>
+
+    <g transform="translate(12, 115)">
+      <rect width="196" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="10" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Hybrid Retrieval</text>
+      <text x="10" y="40" class="mono desc">BM25 Sparse + Dense Vectors</text>
+    </g>
+
+    <g transform="translate(12, 185)">
+      <rect width="196" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="10" y="22" class="sans" font-size="11" font-weight="700" fill="#E2E8F0">Knowledge Sources</text>
+      <text x="10" y="40" class="mono desc">ADRs, Post-Mortems, CIS Specs</text>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 3 -->
+  <g transform="translate(940, 195)">
+    <line x1="0" y1="15" x2="30" y2="15" stroke="#34D399" stroke-width="2.5" stroke-dasharray="4,3">
+      <animate attributeName="stroke-dashoffset" values="14;0" dur="1.2s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- COLUMN 4: AUTONOMOUS REMEDIATION ACTIONS -->
+  <g transform="translate(980, 80)">
+    <rect width="190" height="265" rx="10" fill="url(#nodeBg)" stroke="#334155" stroke-width="1.2" />
+    <rect width="190" height="32" rx="10" fill="#1E293B" />
+    <text x="12" y="21" class="sans node-header" fill="#F472B6">4. AUTO ACTIONS</text>
+
+    <g transform="translate(10, 45)">
+      <rect width="170" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="8" y="22" class="sans" font-size="10.5" font-weight="700" fill="#E2E8F0">Auto PR Synthesis</text>
+      <text x="8" y="40" class="mono desc">Generates fix code &amp; tests</text>
+    </g>
+
+    <g transform="translate(10, 115)">
+      <rect width="170" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="8" y="22" class="sans" font-size="10.5" font-weight="700" fill="#E2E8F0">Cluster Self-Healing</text>
+      <text x="8" y="40" class="mono desc">Node drain &amp; rollout restarts</text>
+    </g>
+
+    <g transform="translate(10, 185)">
+      <rect width="170" height="58" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="0.8" />
+      <text x="8" y="22" class="sans" font-size="10.5" font-weight="700" fill="#E2E8F0">Infracost Guard</text>
+      <text x="8" y="40" class="mono desc">Denies PRs exceeding quota</text>
+    </g>
+  </g>
+</svg>

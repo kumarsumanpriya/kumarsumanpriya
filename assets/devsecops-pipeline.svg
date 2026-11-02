@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0B1222" />
+    </linearGradient>
+    <linearGradient id="stepActive" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="pipeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" /><stop offset="50%" stop-color="#818CF8" /><stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .step-num { font-size: 10px; font-weight: 800; fill: #38BDF8; letter-spacing: 0.5px; }
+    .step-title { font-size: 11.5px; font-weight: 700; fill: #F1F5F9; }
+    .step-sub { font-size: 9.5px; fill: #64748B; }
+  </style>
+
+  <rect width="1200" height="180" rx="14" fill="url(#pipeBg)" stroke="#1E293B" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <g transform="translate(25, 18)">
+    <path d="M 0 0 L 1150 0" stroke="url(#pipeGlow)" stroke-width="2" />
+    <text x="0" y="20" class="sans" font-size="13" font-weight="800" fill="#F8FAFC" letter-spacing="1">ZERO-TRUST IMMUTABLE IAC &amp; GITOPS PIPELINE FACTORY</text>
+    <text x="1150" y="20" class="mono" font-size="10" fill="#34D399" text-anchor="end">CONTINUOUS DRIFT DETECTION &amp; ROLLBACK ACTIVE</text>
+  </g>
+
+  <!-- PIPELINE STEPS (6 Columns) -->
+  <g transform="translate(25, 55)">
+    <!-- Step 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="18" r="5" fill="#38BDF8" />
+      <text x="28" y="21" class="mono step-num">STAGE 01</text>
+      <text x="14" y="46" class="sans step-title">Lint &amp; Formatting</text>
+      <text x="14" y="66" class="mono step-sub">terraform fmt</text>
+      <text x="14" y="80" class="mono step-sub">tflint + yamllint</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="178" y1="50" x2="192" y2="50" stroke="#475569" stroke-width="2" stroke-dasharray="3,2" />
+
+    <!-- Step 2 -->
+    <g transform="translate(195, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="18" r="5" fill="#EF4444" />
+      <text x="28" y="21" class="mono step-num" fill="#EF4444">STAGE 02</text>
+      <text x="14" y="46" class="sans step-title">Secrets &amp; SAST</text>
+      <text x="14" y="66" class="mono step-sub">Checkov + tfsec</text>
+      <text x="14" y="80" class="mono step-sub">GitLeaks + Trivy</text>
+    </g>
+
+    <line x1="373" y1="50" x2="387" y2="50" stroke="#475569" stroke-width="2" stroke-dasharray="3,2" />
+
+    <!-- Step 3 -->
+    <g transform="translate(390, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="18" r="5" fill="#F59E0B" />
+      <text x="28" y="21" class="mono step-num" fill="#F59E0B">STAGE 03</text>
+      <text x="14" y="46" class="sans step-title">FinOps Cost Guard</text>
+      <text x="14" y="66" class="mono step-sub">Infracost diff calc</text>
+      <text x="14" y="80" class="mono step-sub">Monthly budget gate</text>
+    </g>
+
+    <line x1="568" y1="50" x2="582" y2="50" stroke="#475569" stroke-width="2" stroke-dasharray="3,2" />
+
+    <!-- Step 4 -->
+    <g transform="translate(585, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#8B5CF6" stroke-width="1.2" />
+      <circle cx="16" cy="18" r="5" fill="#8B5CF6" />
+      <text x="28" y="21" class="mono step-num" fill="#A855F7">STAGE 04: AI</text>
+      <text x="14" y="46" class="sans step-title">MCP Agent Review</text>
+      <text x="14" y="66" class="mono step-sub">CIS Benchmark audit</text>
+      <text x="14" y="80" class="mono step-sub">Auto PR comments</text>
+    </g>
+
+    <line x1="763" y1="50" x2="777" y2="50" stroke="#475569" stroke-width="2" stroke-dasharray="3,2" />
+
+    <!-- Step 5 -->
+    <g transform="translate(780, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="18" r="5" fill="#6366F1" />
+      <text x="28" y="21" class="mono step-num" fill="#818CF8">STAGE 05</text>
+      <text x="14" y="46" class="sans step-title">State &amp; Approval</text>
+      <text x="14" y="66" class="mono step-sub">Blob lease locking</text>
+      <text x="14" y="80" class="mono step-sub">2 Senior Approvals</text>
+    </g>
+
+    <line x1="958" y1="50" x2="972" y2="50" stroke="#475569" stroke-width="2" stroke-dasharray="3,2" />
+
+    <!-- Step 6 -->
+    <g transform="translate(975, 0)">
+      <rect width="175" height="100" rx="8" fill="url(#stepActive)" stroke="#10B981" stroke-width="1.2" />
+      <circle cx="16" cy="18" r="5" fill="#10B981" />
+      <text x="28" y="21" class="mono step-num" fill="#34D399">STAGE 06</text>
+      <text x="14" y="46" class="sans step-title">Apply &amp; Rollback</text>
+      <text x="14" y="66" class="mono step-sub">Blue/Green cutover</text>
+      <text x="14" y="80" class="mono step-sub">Auto Canary revert</text>
+    </g>
+  </g>
+</svg>

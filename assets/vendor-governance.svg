@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="govBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0E162D" />
+      <stop offset="100%" stop-color="#070C1E" />
+    </linearGradient>
+
+    <linearGradient id="cardGradGov" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.98" />
+    </linearGradient>
+
+    <filter id="govShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .step-num { font-size: 11px; font-weight: 800; }
+    .step-text { font-size: 11.5px; font-weight: 700; fill: #F1F5F9; }
+    .step-desc { font-size: 9.5px; fill: #94A3B8; }
+  </style>
+
+  <rect width="1200" height="200" rx="16" fill="url(#govBg)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- 6 PROGRESSIVE STAGES -->
+  <!-- STEP 1 -->
+  <g transform="translate(25, 30)">
+    <rect width="170" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 162 0" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#38BDF8">PHASE 01</text>
+    <text x="14" y="52" class="sans step-text">RFI Discovery</text>
+    <line x1="14" y1="64" x2="156" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• Market capabilities</text>
+    <text x="14" y="105" class="mono step-desc">• Feasibility baseline</text>
+    <text x="14" y="125" class="mono step-desc">• Vendor longlist</text>
+  </g>
+
+  <!-- ARROW 1 -->
+  <path d="M 200 100 L 220 100" stroke="#38BDF8" stroke-width="2" />
+
+  <!-- STEP 2 -->
+  <g transform="translate(225, 30)">
+    <rect width="170" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 162 0" stroke="#818CF8" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#818CF8">PHASE 02</text>
+    <text x="14" y="52" class="sans step-text">RFP &amp; Solution Defense</text>
+    <line x1="14" y1="64" x2="156" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• Architecture design</text>
+    <text x="14" y="105" class="mono step-desc">• CTO / CISO defense</text>
+    <text x="14" y="125" class="mono step-desc">• Commercial scoping</text>
+  </g>
+
+  <!-- ARROW 2 -->
+  <path d="M 400 100 L 420 100" stroke="#818CF8" stroke-width="2" />
+
+  <!-- STEP 3 -->
+  <g transform="translate(425, 30)">
+    <rect width="170" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 162 0" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#A78BFA">PHASE 03</text>
+    <text x="14" y="52" class="sans step-text">Evaluation Matrix</text>
+    <line x1="14" y1="64" x2="156" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• SOC2 / CIS scoring</text>
+    <text x="14" y="105" class="mono step-desc">• 3-Year TCO modeling</text>
+    <text x="14" y="125" class="mono step-desc">• Proof of Concept (PoC)</text>
+  </g>
+
+  <!-- ARROW 3 -->
+  <path d="M 600 100 L 620 100" stroke="#A78BFA" stroke-width="2" />
+
+  <!-- STEP 4 -->
+  <g transform="translate(625, 30)">
+    <rect width="170" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 162 0" stroke="#F472B6" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#F472B6">PHASE 04</text>
+    <text x="14" y="52" class="sans step-text">SOW Engineering</text>
+    <line x1="14" y1="64" x2="156" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• Deliverable bounds</text>
+    <text x="14" y="105" class="mono step-desc">• Milestones &amp; SLAs</text>
+    <text x="14" y="125" class="mono step-desc">• Legal IP covenants</text>
+  </g>
+
+  <!-- ARROW 4 -->
+  <path d="M 800 100 L 820 100" stroke="#F472B6" stroke-width="2" />
+
+  <!-- STEP 5 -->
+  <g transform="translate(825, 30)">
+    <rect width="170" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 162 0" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#34D399">PHASE 05</text>
+    <text x="14" y="52" class="sans step-text">RACI Governance</text>
+    <line x1="14" y1="64" x2="156" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• Sprint execution</text>
+    <text x="14" y="105" class="mono step-desc">• ARB review gates</text>
+    <text x="14" y="125" class="mono step-desc">• Quality audit cycles</text>
+  </g>
+
+  <!-- ARROW 5 -->
+  <path d="M 1000 100 L 1020 100" stroke="#34D399" stroke-width="2" />
+
+  <!-- STEP 6 -->
+  <g transform="translate(1025, 30)">
+    <rect width="150" height="140" rx="10" fill="url(#cardGradGov)" stroke="#1E293B" stroke-width="1" filter="url(#govShadow)" />
+    <path d="M 8 0 L 142 0" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" />
+    <text x="14" y="26" class="mono step-num" fill="#10B981">PHASE 06</text>
+    <text x="14" y="52" class="sans step-text">Sign-Off &amp; Handover</text>
+    <line x1="14" y1="64" x2="136" y2="64" stroke="#334155" stroke-width="0.8" />
+    <text x="14" y="85" class="mono step-desc">• Final acceptance</text>
+    <text x="14" y="105" class="mono step-desc">• Commercial release</text>
+    <text x="14" y="125" class="mono step-desc">• Operational KT</text>
+  </g>
+</svg>
+

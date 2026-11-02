@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0B132B" />
+    </linearGradient>
+    <linearGradient id="goldCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" /><stop offset="50%" stop-color="#818CF8" /><stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .quote { font-style: italic; font-size: 13.5px; fill: #CBD5E1; font-weight: 400; }
+  </style>
+
+  <rect width="1200" height="140" rx="16" fill="url(#footerBg)" stroke="#1E293B" stroke-width="1.5" />
+  <path d="M 20 2 L 1180 2" stroke="url(#goldCyan)" stroke-width="2.5" />
+
+  <g transform="translate(60, 40)">
+    <text x="540" y="24" class="sans quote" text-anchor="middle">
+      “True architecture does not introduce complexity; it constructs systems so autonomous, resilient, and elegant that complexity dissolves into pure enterprise velocity.”
+    </text>
+    <text x="540" y="58" class="mono" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1">
+      KUMAR SUMAN PRIYA — PRINCIPAL CLOUD ARCHITECT &amp; STAFF DEVSECOPS LEADER
+    </text>
+  </g>
+</svg>

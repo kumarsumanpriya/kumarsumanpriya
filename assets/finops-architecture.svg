@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finopsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0A1128" />
+      <stop offset="100%" stop-color="#060A18" />
+    </linearGradient>
+
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.98" />
+    </linearGradient>
+
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" /><stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" /><stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" /><stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    .title { font-size: 15px; font-weight: 800; fill: #F8FAFC; letter-spacing: 1px; }
+    .card-title { font-size: 13.5px; font-weight: 700; }
+    .bullet { font-size: 11.5px; fill: #CBD5E1; }
+    .tag { font-size: 10px; font-weight: 700; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="1200" height="340" rx="16" fill="url(#finopsBg)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- TOP HEADER / APEX NODE -->
+  <g transform="translate(30, 20)">
+    <rect width="1140" height="56" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.2" filter="url(#boxShadow)" />
+    <path d="M 12 0 L 1128 0" stroke="url(#goldGlow)" stroke-width="3" stroke-linecap="round" />
+    
+    <circle cx="35" cy="28" r="16" fill="#047857" opacity="0.4" />
+    <circle cx="35" cy="28" r="8" fill="#10B981" />
+    
+    <text x="65" y="27" class="sans title">STRATEGIC FINOPS VALUE ENGINE &amp; COST OPTIMIZATION</text>
+    <text x="65" y="44" class="mono" font-size="11" fill="#34D399">SUSTAINED 35% ANNUAL CLOUD EXPENDITURE REDUCTION</text>
+
+    <!-- Right Metric Pill -->
+    <rect x="960" y="12" width="160" height="32" rx="16" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text x="1040" y="32" class="sans" font-size="13" font-weight="800" fill="#6EE7B7" text-anchor="middle">$M+ SAVINGS</text>
+  </g>
+
+  <!-- CONNECTING BUS -->
+  <path d="M 600 76 L 600 100" stroke="#334155" stroke-width="2" />
+  <path d="M 220 100 L 980 100" stroke="#334155" stroke-width="2" />
+  <path d="M 220 100 L 220 120" stroke="#38BDF8" stroke-width="2" />
+  <path d="M 600 100 L 600 120" stroke="#10B981" stroke-width="2" />
+  <path d="M 980 100 L 980 120" stroke="#818CF8" stroke-width="2" />
+
+  <!-- PILLAR 1: INFRACOST PR BUDGET GATES -->
+  <g transform="translate(30, 120)">
+    <rect width="360" height="195" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2" filter="url(#boxShadow)" />
+    <path d="M 12 0 L 348 0" stroke="url(#accent1)" stroke-width="2.5" stroke-linecap="round" />
+    
+    <text x="20" y="32" class="sans card-title" fill="#38BDF8">1. INFRACOST PR BUDGET GATES</text>
+    <text x="20" y="50" class="mono tag" fill="#64748B">SHIFT-LEFT SPECULATIVE FINOPS</text>
+    
+    <line x1="20" y1="62" x2="340" y2="62" stroke="#334155" stroke-width="0.8" />
+    
+    <circle cx="28" cy="85" r="3" fill="#38BDF8" />
+    <text x="40" y="89" class="sans bullet">Automated Infracost CLI in Azure Pipelines</text>
+
+    <circle cx="28" cy="118" r="3" fill="#38BDF8" />
+    <text x="40" y="122" class="sans bullet">PR blocker for cost deltas exceeding thresholds</text>
+
+    <circle cx="28" cy="151" r="3" fill="#38BDF8" />
+    <text x="40" y="155" class="sans bullet">Automated hygiene for unattached managed disks</text>
+
+    <circle cx="28" cy="180" r="3" fill="#38BDF8" />
+    <text x="40" y="184" class="sans bullet">Scheduled non-prod environment auto-shutdown</text>
+  </g>
+
+  <!-- PILLAR 2: COMMITMENT ENGINE -->
+  <g transform="translate(420, 120)">
+    <rect width="360" height="195" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2" filter="url(#boxShadow)" />
+    <path d="M 12 0 L 348 0" stroke="url(#accent2)" stroke-width="2.5" stroke-linecap="round" />
+    
+    <text x="20" y="32" class="sans card-title" fill="#34D399">2. COMMITMENT &amp; RESERVATIONS</text>
+    <text x="20" y="50" class="mono tag" fill="#64748B">PORTFOLIO DISCOUNT OPTIMIZATION</text>
+    
+    <line x1="20" y1="62" x2="340" y2="62" stroke="#334155" stroke-width="0.8" />
+    
+    <circle cx="28" cy="85" r="3" fill="#34D399" />
+    <text x="40" y="89" class="sans bullet">1-Year &amp; 3-Year Azure Reserved Instances (RI)</text>
+
+    <circle cx="28" cy="118" r="3" fill="#34D399" />
+    <text x="40" y="122" class="sans bullet">Azure Savings Plans for dynamic compute</text>
+
+    <circle cx="28" cy="151" r="3" fill="#34D399" />
+    <text x="40" y="155" class="sans bullet">Spot node pools for batch workloads &amp; AI jobs</text>
+
+    <circle cx="28" cy="180" r="3" fill="#34D399" />
+    <text x="40" y="184" class="sans bullet">Compute Rightsizing based on 95th percentile metrics</text>
+  </g>
+
+  <!-- PILLAR 3: TELEMETRY & LOG ALLOCATION -->
+  <g transform="translate(810, 120)">
+    <rect width="360" height="195" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2" filter="url(#boxShadow)" />
+    <path d="M 12 0 L 348 0" stroke="url(#accent3)" stroke-width="2.5" stroke-linecap="round" />
+    
+    <text x="20" y="32" class="sans card-title" fill="#818CF8">3. TELEMETRY LOG TUNING</text>
+    <text x="20" y="50" class="mono tag" fill="#64748B">LOG ANALYTICS &amp; TAG GOVERNANCE</text>
+    
+    <line x1="20" y1="62" x2="340" y2="62" stroke="#334155" stroke-width="0.8" />
+    
+    <circle cx="28" cy="85" r="3" fill="#818CF8" />
+    <text x="40" y="89" class="sans bullet">Data Collection Rules (DCR) filter noisy logs</text>
+
+    <circle cx="28" cy="118" r="3" fill="#818CF8" />
+    <text x="40" y="122" class="sans bullet">Tiering: Basic vs Analytics retention storage</text>
+
+    <circle cx="28" cy="151" r="3" fill="#818CF8" />
+    <text x="40" y="155" class="sans bullet">Granular tag allocation per business Cost-Center</text>
+
+    <circle cx="28" cy="180" r="3" fill="#818CF8" />
+    <text x="40" y="184" class="sans bullet">Real-time budget anomaly alerting via Azure Alerts</text>
+  </g>
+</svg>
+

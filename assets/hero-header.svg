@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="50%" stop-color="#080F24" />
+      <stop offset="100%" stop-color="#050917" />
+    </linearGradient>
+
+    <!-- Ambient Glow Accents -->
+    <radialGradient id="glowGold" cx="18%" cy="32%" r="55%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="75%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowRose" cx="88%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Laser Stream Gradients (Imperial Gold & Amber Dual Stream) -->
+    <linearGradient id="laserGradGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0" />
+      <stop offset="65%" stop-color="#FFD700" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="laserGradAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0" />
+      <stop offset="60%" stop-color="#FF9E00" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FFE066" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- ULTRA-ATTRACTIVE 24K LIQUID GOLD GRADIENT -->
+    <linearGradient id="nameGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF8D6">
+        <animate attributeName="stop-color" values="#FFF8D6;#FFE066;#FFD700;#FFF8D6" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="30%" stop-color="#FFD700">
+        <animate attributeName="stop-color" values="#FFD700;#FFF8D6;#FFA000;#FFD700" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#FFA000">
+        <animate attributeName="stop-color" values="#FFA000;#FFD700;#FF5722;#FFA000" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#FF6F00">
+        <animate attributeName="stop-color" values="#FF6F00;#FFA000;#FFD700;#FF6F00" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Crystal Clear Drop Shadow Glow for True Monotype Corsiva (NO Blurry Fog) -->
+    <filter id="crispGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#FFB300" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <filter id="boxGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#FFD700" flood-opacity="0.35">
+        <animate attributeName="flood-opacity" values="0.25;0.6;0.25" dur="3s" repeatCount="indefinite" />
+      </feDropShadow>
+    </filter>
+
+    <filter id="laserGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.5" />
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif; }
+    
+    /* TRUE MONOTYPE CORSIVA CALLIGRAPHIC FONT (Crisp, Elegant &amp; Natural) */
+    .name-corsiva {
+      font-family: 'Monotype Corsiva', 'Corsiva', 'Apple Chancery', 'Brush Script MT', cursive, serif;
+      font-style: italic;
+      letter-spacing: 0.2px;
+    }
+
+    .tagline { font-weight: 600; letter-spacing: 1.5px; font-size: 13px; font-family: 'SF Mono', 'Fira Code', monospace; }
+    .pill-text { font-size: 12px; font-weight: 600; fill: #E2E8F0; }
+  </style>
+
+  <!-- Container Box with Rounded Edges -->
+  <rect width="1200" height="360" rx="20" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="1200" height="360" rx="20" fill="url(#grid)" />
+  <rect width="1200" height="360" rx="20" fill="url(#glowGold)" />
+  <rect width="1200" height="360" rx="20" fill="url(#glowCyan)" />
+  <rect width="1200" height="360" rx="20" fill="url(#glowRose)" />
+
+  <!-- Top Accent Neon Bar -->
+  <path d="M 40 2 L 1160 2" stroke="#FFD700" stroke-width="3" stroke-linecap="round" filter="url(#shadow)">
+    <animate attributeName="stroke" values="#FFD700;#00F2FE;#F43F5E;#FFD700" dur="6s" repeatCount="indefinite" />
+  </path>
+
+  <!-- LEFT BRANDING / TITLES -->
+  <g transform="translate(60, 40)">
+    <!-- Status Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="440" height="30" rx="15" fill="#0F172A" stroke="#00F2FE" stroke-width="1" stroke-opacity="0.7" />
+      <circle cx="15" cy="15" r="4" fill="#00F2FE">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="r" values="4;5.5;4" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="28" y="19" class="mono" font-size="11" fill="#00F2FE" font-weight="700" letter-spacing="1">LEAD DEVSECOPS &amp; CLOUD PLATFORM ENGINEER</text>
+    </g>
+
+    <!-- ==================================================================== -->
+    <!-- CUSTOM-TAILORED BOX: NAME FILLS ENTIRE BOX EDGE-TO-EDGE              -->
+    <!-- Box width=540, height=92, text centered at x=270, font-size=66       -->
+    <!-- Perimeter: 2*(540-28) + 2*(92-28) + 2*PI*14 = 1240px                 -->
+    <!-- ==================================================================== -->
+    <g transform="translate(0, 42)">
+      <!-- 1. Ambient Frosted Glass Base Plate -->
+      <rect x="0" y="0" width="540" height="92" rx="14" fill="#060B1C" fill-opacity="0.95" stroke="#FFD700" stroke-width="1.8" filter="url(#boxGoldGlow)" />
+
+      <!-- 2. Animated Laser Beam 1 (Pure Imperial Gold & Diamond Stream) -->
+      <rect x="0" y="0" width="540" height="92" rx="14" fill="none" stroke="url(#laserGradGold)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="180 1060" filter="url(#laserGlowFilter)">
+        <animate attributeName="stroke-dashoffset" from="0" to="-1240" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- 3. Animated Laser Beam 2 (Solar Amber & Gold Opposite Chaser) -->
+      <rect x="0" y="0" width="540" height="92" rx="14" fill="none" stroke="url(#laserGradAmber)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="180 1060" filter="url(#laserGlowFilter)">
+        <animate attributeName="stroke-dashoffset" from="-620" to="-1860" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- 4. Pulsing Corner Cyber Accent Brackets (Gold & Amber) -->
+      <g>
+        <path d="M 0 16 L 0 0 L 16 0" stroke="#FFF275" stroke-width="3" fill="none">
+          <animate attributeName="stroke" values="#FFF275;#FF9E00;#FFF275" dur="3s" repeatCount="indefinite" />
+        </path>
+        <path d="M 524 0 L 540 0 L 540 16" stroke="#FF9E00" stroke-width="3" fill="none">
+          <animate attributeName="stroke" values="#FF9E00;#FFF275;#FF9E00" dur="3s" repeatCount="indefinite" />
+        </path>
+        <path d="M 0 76 L 0 92 L 16 92" stroke="#FF9E00" stroke-width="3" fill="none">
+          <animate attributeName="stroke" values="#FF9E00;#FFF275;#FF9E00" dur="3s" repeatCount="indefinite" />
+        </path>
+        <path d="M 524 92 L 540 92 L 540 76" stroke="#FFF275" stroke-width="3" fill="none">
+          <animate attributeName="stroke" values="#FFF275;#FF9E00;#FFF275" dur="3s" repeatCount="indefinite" />
+        </path>
+      </g>
+
+      <!-- 5. Main Crisp Name in True Calligraphic Monotype Corsiva (Fills Box Edge-to-Edge) -->
+      <text x="270" y="66" class="name-corsiva" font-size="66" text-anchor="middle" fill="url(#nameGoldGrad)" filter="url(#crispGoldGlow)">
+        Kumar Suman Priya
+      </text>
+    </g>
+
+    <!-- Strategic Descriptor -->
+    <text x="2" y="164" class="tagline">
+      <tspan fill="#FFD700">AZURE CLOUD INFRASTRUCTURE</tspan>
+      <tspan fill="#64748B"> • </tspan>
+      <tspan fill="#00F2FE">TERRAFORM &amp; IAC AUTOMATION</tspan>
+      <tspan fill="#64748B"> • </tspan>
+      <tspan fill="#F43F5E">GITHUB ACTIONS &amp; ADO</tspan>
+    </text>
+    <text x="2" y="188" class="sans" font-size="14.5" fill="#94A3B8" font-weight="400">
+      Automating enterprise cloud infrastructure with Terraform, Terratest, AI agents, and shift-left security.
+    </text>
+
+    <!-- 4 Value Pill Badges (Fully padded with no text overflow) -->
+    <g transform="translate(0, 214)">
+      <!-- Pill 1: Core Cloud Platform -->
+      <g transform="translate(0, 0)">
+        <rect width="175" height="36" rx="8" fill="url(#pillBg)" stroke="#FFD700" stroke-width="1.2" />
+        <circle cx="16" cy="18" r="4" fill="#FFD700">
+          <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <text x="28" y="22" class="sans pill-text" fill="#FFD700">Azure Cloud Platform</text>
+      </g>
+
+      <!-- Pill 2: Terraform & Terratest -->
+      <g transform="translate(185, 0)">
+        <rect width="175" height="36" rx="8" fill="url(#pillBg)" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#38BDF8" />
+        <text x="28" y="22" class="sans pill-text">Terraform &amp; Terratest</text>
+      </g>
+
+      <!-- Pill 3: Zero-Trust DevSecOps -->
+      <g transform="translate(370, 0)">
+        <rect width="175" height="36" rx="8" fill="url(#pillBg)" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#34D399" />
+        <text x="28" y="22" class="sans pill-text">Zero-Trust DevSecOps</text>
+      </g>
+
+      <!-- Pill 4: 40% Cloud Spend Slashed (Wide box with ample inner margin) -->
+      <g transform="translate(555, 0)">
+        <rect width="195" height="36" rx="8" fill="url(#pillBg)" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="18" r="4" fill="#F43F5E" />
+        <text x="28" y="22" class="sans pill-text">40% Cloud Spend Slashed</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT ARCHITECTURAL RADAR / TARGET VISUAL -->
+  <g transform="translate(1000, 180)">
+    <!-- Radar Rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="4 4" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#1E293B" stroke-width="1" />
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 2" />
+
+    <!-- Sweep Beam -->
+    <line x1="0" y1="0" x2="99" y2="-99" stroke="#FFD700" stroke-width="1.5" stroke-opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
+    </line>
+
+    <!-- Crosshairs -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#1E293B" stroke-width="0.8" />
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#1E293B" stroke-width="0.8" />
+
+    <!-- Center Core Node -->
+    <circle cx="0" cy="0" r="32" fill="#0B132B" stroke="#FFD700" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="26" fill="#0F172A" stroke="#00F2FE" stroke-width="1.5">
+      <animate attributeName="r" values="24;27;24" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="5" class="mono" font-size="12" fill="#FFFFFF" font-weight="800" text-anchor="middle">IAC</text>
+
+    <!-- Orbiting Satellite Nodes -->
+    <!-- North: Cloud Platform -->
+    <g transform="translate(0, -95)">
+      <circle cx="0" cy="0" r="19" fill="#0B132B" stroke="#00F2FE" stroke-width="2" />
+      <text x="0" y="4" class="sans" font-size="9" fill="#00F2FE" font-weight="700" text-anchor="middle">Azure</text>
+      <text x="0" y="-24" class="sans" font-size="9.5" fill="#64748B" text-anchor="middle">Cloud Platform</text>
+    </g>
+
+    <!-- East: AI & Agents -->
+    <g transform="translate(95, 0)">
+      <circle cx="0" cy="0" r="19" fill="#0B132B" stroke="#C084FC" stroke-width="2" />
+      <text x="0" y="4" class="sans" font-size="9" fill="#C084FC" font-weight="700" text-anchor="middle">AI</text>
+      <text x="0" y="32" class="sans" font-size="9.5" fill="#64748B" text-anchor="middle">Terraform Agent</text>
+    </g>
+
+    <!-- South: CI/CD -->
+    <g transform="translate(0, 95)">
+      <circle cx="0" cy="0" r="19" fill="#0B132B" stroke="#34D399" stroke-width="2" />
+      <text x="0" y="4" class="sans" font-size="8.5" fill="#34D399" font-weight="700" text-anchor="middle">CI/CD</text>
+      <text x="0" y="32" class="sans" font-size="9.5" fill="#64748B" text-anchor="middle">GitHub Actions</text>
+    </g>
+
+    <!-- West: FinOps -->
+    <g transform="translate(-95, 0)">
+      <circle cx="0" cy="0" r="19" fill="#0B132B" stroke="#F43F5E" stroke-width="2" />
+      <text x="0" y="3" class="sans" font-size="8.5" fill="#F43F5E" font-weight="700" text-anchor="middle">FinOps</text>
+      <text x="0" y="32" class="sans" font-size="9.5" fill="#64748B" text-anchor="middle">OpenCost</text>
+    </g>
+  </g>
+</svg>
