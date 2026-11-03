@@ -460,11 +460,11 @@ if __name__ == "__main__":
 
 | Repository & Blueprint | Primary Domain | Architecture Highlights & Engineering Features |
 | :--- | :---: | :--- |
-| **[`azure-terraform-landing-zones`](https://github.com/kumarsumanpriya)** | *IaC & Cloud Infrastructure* | Reusable Terraform modules for Azure Landing Zones (VNet, AKS, Key Vault, Storage), tested with Terratest and gated by TFLint & tfsec. |
-| **[`devsecops-pipeline-factory`](https://github.com/kumarsumanpriya)** | *DevSecOps & CI/CD* | Production GitHub Actions & ADO pipelines embedding TruffleHog, Checkov, Super Linter, and Infracost PR budget bots. |
-| **[`aks-keda-landing-zone`](https://github.com/kumarsumanpriya)** | *Kubernetes Platform* | Multi-AZ AKS cluster setup with Azure CNI Overlay, Entra Workload Identity, Secret Store CSI Driver, and KEDA queue scalers. |
-| **[`opencost-azure-governance`](https://github.com/kumarsumanpriya)** | *FinOps & Cost Governance* | Infracost & OpenCost configuration enabling per-team cost attribution, automated idle disk cleanup, and 40% spend reduction. |
-| **[`ai-terraform-drift-agent`](https://github.com/kumarsumanpriya)** | *Agentic Automation* | Python utilities and intelligent agents analyzing Terraform plans, inspecting Azure inventory, and automating drift remediation. |
+| **[`azure-terraform-landing-zones`](https://github.com/kumarsumanpriya/azure-terraform-landing-zones)** | *IaC & Cloud Infrastructure* | Reusable Terraform modules for Azure Landing Zones (VNet, AKS, Key Vault, Storage), tested with Terratest and gated by TFLint & tfsec. |
+| **[`devsecops-pipeline-factory`](https://github.com/kumarsumanpriya/devsecops-pipeline-factory)** | *DevSecOps & CI/CD* | Production GitHub Actions & ADO pipelines embedding TruffleHog, Checkov, Super Linter, and Infracost PR budget bots. |
+| **[`aks-keda-landing-zone`](https://github.com/kumarsumanpriya/aks-keda-landing-zone)** | *Kubernetes Platform* | Multi-AZ AKS cluster setup with Azure CNI Overlay, Entra Workload Identity, Secret Store CSI Driver, and KEDA queue scalers. |
+| **[`opencost-azure-governance`](https://github.com/kumarsumanpriya/opencost-azure-governance)** | *FinOps & Cost Governance* | Infracost & OpenCost configuration enabling per-team cost attribution, automated idle disk cleanup, and 40% spend reduction. |
+| **[`ai-terraform-drift-agent`](https://github.com/kumarsumanpriya/ai-terraform-drift-agent)** | *Agentic Automation* | Python utilities and intelligent agents analyzing Terraform plans, inspecting Azure inventory, and automating drift remediation. |
 
 </div>
 
