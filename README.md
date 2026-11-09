@@ -487,30 +487,6 @@ if __name__ == "__main__":
 
 ---
 
-## 📈 Engineering Analytics & Activity
-
-<div align="center">
-
-<table border="0">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=kumarsumanpriya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=060913&title_color=38BDF8&icon_color=818CF8&text_color=94A3B8" alt="GitHub Stats" width="100%" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kumarsumanpriya&layout=compact&theme=tokyonight&hide_border=true&bg_color=060913&title_color=38BDF8&text_color=94A3B8" alt="Top Languages" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" width="100%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=kumarsumanpriya&theme=tokyonight&hide_border=true&background=060913&stroke=38BDF8&ring=818CF8&fire=F59E0B&currStreakLabel=38BDF8" alt="GitHub Streak" width="100%" />
-    </td>
-  </tr>
-</table>
-
-</div>
-
----
-
 ## 📬 Connect & Collaboration
 
 I am open to discussions on **Lead DevSecOps Roles**, **Azure Cloud Infrastructure Automation**, **Terraform &amp; Terratest Frameworks**, and **Cloud Cost Governance Consulting**.
